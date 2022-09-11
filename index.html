@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dice Game</title>
+</head>
+<body>
+    <div class="first-page" id="firstPage">
+        <div class="container">
+            <label for="player1">Player 1:</label>
+            <input type="text" id="first-player-name" placeholder="Enter player 1 name..."> <br>
+            <label for="player2">Player 2:</label>
+            <input type="text" id="second-player-name" placeholder="Enter player 2 name..."> <br>
+            <button type="button" id="start-btn">Start Game</button>
+        </div>
+    </div>
+    <div class="main hide" id="secondPage">
+        <h2 id="game-message"></h2>
+        <div class="game-board">
+            <div class="firstPlayer">
+                <h3>Score: <span id="firstPlayerScore">0</span></h3>
+                <div class="active" id="firstPlayerScoreboard">-</div>
+            </div>
+            <div class="secondPlayer">
+                <h3>Score: <span id="secondPlayerScore">0</span></h3>
+                <div class=" " id="secondPlayerScoreboard">-</div>
+            </div>
+        </div>
+
+        <button id="roll-btn">Roll Dice</button>
+        <button id="reset-btn">Reset Game</button>
+    </div>
+    <script src="confetti.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
